@@ -34,9 +34,18 @@ namespace Formulário1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            listBox2.Items.Add(textBox3.Text);
-            listBox2.Items.Add(DateTime.Now.Date.ToShortDateString());
-            listBox2.Items.Add(DateTime.Now.TimeOfDay.ToString());
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 OutroForm = new Form2();
+            OutroForm.ShowDialog();
         }
     }
 }
